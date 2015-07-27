@@ -6,7 +6,7 @@
 from __future__ import unicode_literals
 import datetime as py_datetime
 import sys
-from jdatetime.jalali import GregorianToJalali, JalaliToGregorian, j_days_in_month
+from .jalali import GregorianToJalali, JalaliToGregorian, j_days_in_month
 import re as _re
 import locale as _locale
 __VERSION__ = "1.6"
@@ -113,7 +113,12 @@ class date(object):
                            u'جمع']
     j_ampm_fa = {'PM': u'بعد از ظهر', 'AM': u'قبل از ظهر'}
 
-    if 'fa_IR' in _locale.getdefaultlocale():
+    # original jdatetime code
+    #if 'fa_IR' in _locale.getdefaultlocale():
+
+    # modification which made for pelican_persian_date plugin
+    # modifying jdatetime to enforce persian date output,regardless of locale settings
+    if True:
         j_months = j_months_fa
         j_months_short = j_months_short_fa
         j_weekdays = j_weekdays_fa
