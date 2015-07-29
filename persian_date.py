@@ -4,7 +4,7 @@ Pelican Persian date
 ====================
 A Pelican plugin to convert 'article.locale_date' attribute
 from Gregorian calendar into Solar Hijri calendar (AKA Jalali calendar,
-Persian calendar, iranian calendar) which is the official calendar of
+Persian calendar, Iranian calendar) which is the official calendar of
 Iran and Afghanistan.
 """
 # Pelican Persian date
